@@ -45,7 +45,7 @@ const [select, setSelect] = useState<number | null>(null);
           </ul>
           <div className="buttons">
             <a className="view-user-button" href="/">Visualizar usuários</a>
-            <a className="new-user-button">Cadastrar Novo Usuário</a>
+            <a className="new-user-button" href="/register-pacient">Cadastrar Novo Usuário</a>
           </div>
         </div>
       </div>
