@@ -1,6 +1,8 @@
 import SideBar from "./components/sidebar";
 import ProfilePic from "../assets/profile.jpg";
+import PacientCalendar from "./calendar";
 function PacientPage() {
+ 
   return (
     <section className="pacient-page-sec">
       <SideBar></SideBar>
@@ -85,11 +87,11 @@ function PacientPage() {
             </div>
 
             <div className="observation-box">
-              <h2>Observações Gerais &#x276F;</h2>
+              <h2>Medicamentos &#x276F;</h2>
               <div className="observation-wrapper">
                 <div className="warning-box">
                   <div className="warning-title">
-                    <h3>Alergia a XXXX</h3>
+                    <h3>Pressão Medida</h3>
                     <div>
                       <i className="fa-regular fa-circle-check"></i>
                       <time dateTime="2003-09-24">24/09/2024</time>
@@ -103,7 +105,7 @@ function PacientPage() {
               </div>
             </div>
             <div className="observation-box">
-              <h2>Observações Gerais &#x276F;</h2>
+              <h2>Controle de Rotina &#x276F;</h2>
               <div className="observation-wrapper">
                 <div className="warning-box">
                   <div className="warning-title">
@@ -203,6 +205,7 @@ function PacientPage() {
           </div>
         </div>
       </div>
+      <PacientCalendar></PacientCalendar>
     </section>
   );
 }
