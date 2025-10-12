@@ -8,7 +8,7 @@ const [select, setSelect] = useState<number | null>(null);
     "Lorem ipsum",
     "Dolor sit amet",
     "Amet ipsum lorem",
-    "Sorem iud lor",
+    "Gerenciar Cuidadores",
     "Ipsum amet ",
     "Gdaer Opsum"
   ];
@@ -44,7 +44,7 @@ const [select, setSelect] = useState<number | null>(null);
             ))}
           </ul>
           <div className="buttons">
-            <a className="view-user-button" href="/">Visualizar usuários</a>
+            <a className="view-user-button" href="/home">Visualizar usuários</a>
             <a className="new-user-button" href="/register-pacient">Cadastrar Novo Usuário</a>
           </div>
         </div>

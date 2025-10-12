@@ -552,12 +552,13 @@ div.history-box {
 
 .register-container {
   flex: 1;
+  margin-left: 20vw;
   height: 100%;
   background-color: #e8e8e8;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0px 40px;
+  padding-left: 40px;
   & > h1 {
     color: #0f0f0f;
     margin-top: 20px;
@@ -783,18 +784,18 @@ div.day-week-box {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  padding:0px   5px;
+  padding: 0px 5px;
   font-size: 15px;
-  & p { 
+  & p {
     padding: 5px;
   }
 
   & span {
-    justify-self:center;
+    justify-self: center;
     background-color: orange !important;
-    color:white;
-    padding:5px;
-    font-size: 12px; 
+    color: white;
+    padding: 5px;
+    font-size: 12px;
   }
 }
 .short {
@@ -807,13 +808,13 @@ div.day-week-box {
       align-items: center;
       width: 30%;
       height: 50%;
-      & > button{
+      & > button {
         height: 70%;
       }
     }
-    & .date-select{
+    & .date-select {
       width: 30%;
-      
+
       display: flex;
       gap: 10px;
     }
@@ -827,34 +828,33 @@ div.day-week-box {
   color: #4b4b4b;
 }
 
-
-.calendar-box-right{
+.calendar-box-right {
   width: 35%;
-  height: 40% ;
+  height: 40%;
   border-radius: 15px;
   background-color: white;
- 
-  padding:15px;
+
+  padding: 15px;
   flex-direction: column;
   justify-content: space-between;
-  & > h2{
+  & > h2 {
     font-weight: 500;
-    
+
     font-size: 25px;
   }
-  & i{
+  & i {
     margin-right: 10px;
   }
 
-  & ul{
+  & ul {
     margin-top: 20px;
     text-decoration: none;
     list-style: none;
 
     & li {
-      margin-top:20px; 
+      margin-top: 20px;
       padding: 5px 10px;
-      color:white;
+      color: white;
       border-radius: 10px;
       display: flex;
       justify-content: space-between;
@@ -863,41 +863,119 @@ div.day-week-box {
       & i {
         padding-right: 10px;
       }
-      & i:hover{
+      & i:hover {
         scale: 1.1;
-        cursor:pointer;
+        cursor: pointer;
       }
     }
 
-
-    & .l1{
+    & .l1 {
       background-color: rgb(87, 215, 87);
     }
-    & .l2{
+    & .l2 {
       background-color: rgb(236, 180, 59);
     }
-    & .l3{
+    & .l3 {
       background-color: rgb(63, 63, 138);
     }
   }
 }
 
-.show{
+.show {
   display: flex;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-.schedule-button{
+.schedule-button {
   width: 45%;
   height: 40px;
   margin-top: 30px;
   display: flex;
   align-items: center;
-  background-color:rgb(19, 85, 172) ;
-  color:white;
+  background-color: rgb(19, 85, 172);
+  color: white;
   border-radius: 100px;
   justify-content: center;
+}
+
+.login-sec {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #223dc3;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 61, 195, 1) 0%,
+    rgba(116, 119, 173, 1) 72%
+  );
+  justify-content: center;
+}
+.login-container {
+  width: 30%;
+  height: 60%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  & h1 {
+    color: #0f0f0f;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+  }
+  & h2 {
+    font-weight: 500;
+    text-align: center;
+    font-size: 15px;
+    color: #202020;
+  }
+
+  & form {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0px 20px;
+    & .login-btn {
+      background-color: #1434b6;
+      height: 40px;
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      color: white;
+      text-decoration: none;
+    }
+    & div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      & label {
+        margin-bottom: 10px;
+        font-size: 13px;
+        margin-left: 3px;
+      }
+      & input {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        border-bottom: 3px solid #939393;
+        -webkit-box-shadow: 2px -2px 14px -7px #000000;
+        box-shadow: 2px -2px 14px -7px #000000;
+        padding-left: 10px;
+      }
+    }
+  }
 }
