@@ -56,7 +56,9 @@
         font-weight: 500;
         color: rgb(13, 13, 13);
 
-        & p {
+        & a {
+          text-decoration: none;
+          color: #0f0f0f;
           display: flex;
           gap: 20px;
           align-items: center;
@@ -544,13 +546,15 @@ div.history-box {
   }
 }
 
-.register-section {
+.register-section,
+.register-section-caregiver {
   width: 100%;
   display: flex;
   height: 100vh;
 }
 
-.register-container {
+.register-container,
+.register-container-caregiver {
   flex: 1;
   margin-left: 20vw;
   height: 100%;
@@ -585,7 +589,7 @@ div.history-box {
   flex-direction: column;
   align-items: center;
   padding: 20px 0px;
-  justify-content: space-between;
+
   & > div.input {
     height: 100px;
     justify-content: center;
@@ -615,11 +619,9 @@ form.register {
 }
 div.register-pacient-image {
   width: 200px;
-
   height: 200px;
-
   position: relative;
-  margin-bottom: 17.5px;
+  margin-bottom: 0px;
   & > img {
     width: 100%;
   }
@@ -907,16 +909,12 @@ div.day-week-box {
   display: flex;
   align-items: center;
   background: #223dc3;
-  background: linear-gradient(
-    0deg,
-    rgba(34, 61, 195, 1) 0%,
-    rgba(116, 119, 173, 1) 72%
-  );
+  background: linear-gradient(0deg, rgb(70, 89, 182) 0%, rgb(31, 31, 37) 72%);
   justify-content: center;
 }
 .login-container {
   width: 30%;
-  height: 60%;
+  height: 64%;
   background-color: rgb(255, 255, 255);
   padding: 20px;
 
@@ -946,7 +944,7 @@ div.day-week-box {
     padding: 0px 20px;
     & .login-btn {
       background-color: #1434b6;
-      height: 40px;
+      height: 50px;
       width: 100%;
       margin-top: 30px;
       display: flex;
@@ -955,6 +953,9 @@ div.day-week-box {
       border-radius: 100px;
       color: white;
       text-decoration: none;
+    }
+    & .login-btn:hover {
+      transform: scale(1.01);
     }
     & div {
       width: 100%;
@@ -976,6 +977,140 @@ div.day-week-box {
         box-shadow: 2px -2px 14px -7px #000000;
         padding-left: 10px;
       }
+    }
+  }
+}
+
+.caregiver-section {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(205, 204, 204);
+  display: flex;
+  align-items: center;
+}
+
+.caregiver-container {
+  flex: 1;
+  margin-left: 22vw;
+  max-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px 20px;
+
+  & h1 {
+    color: #0f0f0f;
+    margin-top: 60px;
+    font-size: 25px;
+  }
+}
+
+.caregiver-box {
+  width: 48%;
+  height: 200px;
+  border-radius: 15px;
+  border-bottom: 10px solid rgb(149, 149, 149);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  & div.caregiver-image {
+    height: 80%;
+
+    & img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  & .caregiver-box-content {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+    padding-left: 20px;
+
+
+    justify-content: center;
+    gap:10px;
+    & p {
+      font-size: 16px;
+   
+      color: #202020;
+      & span {
+        color: #0f0f0f;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      & i.sun {
+        margin-left: 5px;
+        color: rgb(158, 97, 18) !important;
+      }
+      & i.check {
+        margin-left: 5px;
+        font-size: 15px;
+        color: rgb(16, 99, 10);
+        font-weight: 1000;
+      }
+    }
+  }
+  & .caregiver-box-links {
+
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 15px;
+    padding: 5px 0px;
+    padding-right: 5px;
+    & div {
+      display: flex;
+      justify-content: start !important;
+      color: white;
+      padding: 10px;
+      width: 85%;
+      border-radius: 10px;
+      & a {
+        font-size: 13px;
+        font-weight: 600;
+
+        & i {
+          margin-right: 5px;
+        }
+      }
+    }
+    & .details:hover, .edit:hover , .contact:hover{
+      transform: translateY(-2px);
+      cursor:pointer;
+      filter: brightness(0.8);
+    }
+  }
+}
+
+.caregiver-container >.title{
+  width: 100%;
+  padding:30px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  align-items: center;
+
+  & h1{
+    margin-top: 0px !important;
+    padding: 0px !important;
+    font-size: 30px;
+    color:#0f0f0f;
+
+  }
+  & a{
+    background-color:rgb(19, 85, 172);
+    padding:15px 30px;
+    color:white;
+    text-decoration: none;
+    border-radius: 100px;  
+    & i {
+      margin-right: 10px;
     }
   }
 }
