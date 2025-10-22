@@ -15,9 +15,9 @@
 }
 
 .side-bar {
-  width: 20vw;
+  width: 19vw;
   position: fixed;
-  background-color: white;
+  background-color: rgb(20, 20, 20);
   height: 100vh;
   top: 0;
   flex-direction: column;
@@ -29,12 +29,10 @@
     height: 25%;
     display: flex;
     align-items: center;
-
+    padding: 0px 30px;
     align-items: center;
-    & > h1 {
-      margin-left: 30px;
-      color: #0f0f0f;
-      font-size: 40px;
+    & img {
+      width: 50%;
     }
   }
 
@@ -54,11 +52,10 @@
 
         font-size: 14px;
         font-weight: 500;
-        color: rgb(13, 13, 13);
 
         & a {
           text-decoration: none;
-          color: #0f0f0f;
+          color: #e0e0e0;
           display: flex;
           gap: 20px;
           align-items: center;
@@ -73,12 +70,12 @@
     & div.buttons {
       margin-top: auto;
       margin-bottom: 20px;
-      margin-left: 30px;
+      margin-left: 20px;
       display: flex;
       flex-direction: column;
       gap: 20px;
       & > a {
-        width: 80%;
+        width: 90%;
         text-align: center;
         padding: 10px 0px;
         border-radius: 100px;
@@ -99,8 +96,8 @@
 .home-container {
   flex: 1;
   height: 100%;
-  margin-left: 20vw;
-  background-color: rgb(205, 204, 204);
+  margin-left: 19vw;
+  background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
   & .home-container-title {
@@ -139,9 +136,9 @@
       height: 40px;
 
       border-radius: 100%;
-      background-color: #ffffff;
+
       & > i {
-        font-size: 18px;
+        font-size: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -154,7 +151,7 @@
 }
 
 .select {
-  background-color: rgb(222, 222, 222);
+  background-color: rgb(0, 0, 0);
 
   & p {
     text-decoration: underline;
@@ -217,6 +214,7 @@ div.pacient-box {
   height: 80px;
   border-radius: 20px;
   background-color: white;
+  border: 1px solid rgb(169, 169, 169);
   grid-template-columns: repeat(5, 20%);
   display: grid;
   align-items: center;
@@ -259,7 +257,7 @@ div.pacient-box {
 
 div.pacient-page-container {
   height: 90vh;
-  margin-left: 20vw;
+  margin-left: 19vw;
   padding-top: 50px;
 
   display: flex;
@@ -556,9 +554,9 @@ div.history-box {
 .register-container,
 .register-container-caregiver {
   flex: 1;
-  margin-left: 20vw;
+  margin-left: 19vw;
   height: 100%;
-  background-color: #e8e8e8;
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -572,6 +570,9 @@ div.history-box {
 }
 
 .register-wrapper {
+  border-radius: 15px;
+  border: 2px solid rgb(148, 148, 148);
+  padding: 20px;
   width: 95%;
   height: 85%;
   margin-top: 10px;
@@ -662,7 +663,7 @@ a.rpi-btn {
 
 div.calendar-container {
   flex: 1;
-  margin-left: 20.2vw;
+  margin-left: 19.5vw;
   gap: 40px;
   display: flex;
   height: 52%;
@@ -831,7 +832,7 @@ div.day-week-box {
 }
 
 .calendar-box-right {
-  width: 35%;
+  width: 40%;
   height: 40%;
   border-radius: 15px;
   background-color: white;
@@ -914,13 +915,17 @@ div.day-week-box {
 }
 .login-container {
   width: 30%;
-  height: 64%;
+  height: 75%;
   background-color: rgb(255, 255, 255);
   padding: 20px;
 
   border-radius: 15px;
   display: flex;
+  align-items: center;
   flex-direction: column;
+  & .login-logo {
+    width: 40%;
+  }
   & h1 {
     color: #0f0f0f;
     font-weight: 600;
@@ -931,6 +936,7 @@ div.day-week-box {
     font-weight: 500;
     text-align: center;
     font-size: 15px;
+    margin-top: 15px;
     color: #202020;
   }
 
@@ -984,18 +990,18 @@ div.day-week-box {
 .caregiver-section {
   width: 100%;
   height: 100vh;
-  background-color: rgb(205, 204, 204);
+  background-color: rgb(244, 244, 244);
   display: flex;
   align-items: center;
 }
 
 .caregiver-container {
   flex: 1;
-  margin-left: 22vw;
+  margin-left: 20.5vw;
   max-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  gap:10px 20px;
+  gap: 10px 20px;
 
   & h1 {
     color: #0f0f0f;
@@ -1008,7 +1014,7 @@ div.day-week-box {
   width: 48%;
   height: 200px;
   border-radius: 15px;
-  border-bottom: 10px solid rgb(149, 149, 149);
+  border: 2px solid rgb(148, 148, 148);
   background-color: white;
   display: flex;
   align-items: center;
@@ -1029,12 +1035,11 @@ div.day-week-box {
     padding: 5px 0px;
     padding-left: 20px;
 
-
     justify-content: center;
-    gap:10px;
+    gap: 10px;
     & p {
       font-size: 16px;
-   
+
       color: #202020;
       & span {
         color: #0f0f0f;
@@ -1054,7 +1059,6 @@ div.day-week-box {
     }
   }
   & .caregiver-box-links {
-
     flex: 1;
     height: 100%;
     display: flex;
@@ -1072,6 +1076,8 @@ div.day-week-box {
       width: 85%;
       border-radius: 10px;
       & a {
+        color: white;
+        text-decoration: none;
         font-size: 13px;
         font-weight: 600;
 
@@ -1080,37 +1086,251 @@ div.day-week-box {
         }
       }
     }
-    & .details:hover, .edit:hover , .contact:hover{
+    & .details:hover,
+    .edit:hover,
+    .contact:hover {
       transform: translateY(-2px);
-      cursor:pointer;
+      cursor: pointer;
       filter: brightness(0.8);
     }
   }
 }
 
-.caregiver-container >.title{
+.caregiver-container > .title {
   width: 100%;
-  padding:30px 0px;
+  padding: 30px 0px;
   display: flex;
   justify-content: space-between;
   padding-right: 40px;
   align-items: center;
 
-  & h1{
+  & h1 {
     margin-top: 0px !important;
     padding: 0px !important;
     font-size: 30px;
-    color:#0f0f0f;
-
+    color: #0f0f0f;
   }
-  & a{
-    background-color:rgb(19, 85, 172);
-    padding:15px 30px;
-    color:white;
+  & a {
+    background-color: rgb(19, 85, 172);
+    padding: 15px 30px;
+    color: white;
     text-decoration: none;
-    border-radius: 100px;  
+    border-radius: 100px;
     & i {
       margin-right: 10px;
     }
   }
+}
+
+.caregiverpg-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.cgpg-container {
+  margin-left: 19vw;
+  flex: 1;
+  height: 100%;
+  padding: 0px 50px;
+  background-color: rgb(215, 215, 215);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cgpg-left {
+  width: 30%;
+  height: 90%;
+
+  background-color: white;
+  border-radius: 23px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0px;
+}
+
+.cgpg-right {
+  width: 69%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  & h1 {
+    color: #0f0f0f !important;
+
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  & > div.sections-container {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1%;
+    & > div.section {
+      background-color: white;
+
+      height: 100%;
+
+      border-radius: 23px;
+      padding: 10px 20px;
+
+      & > .pct-box {
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        padding: 0px !important;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(195, 195, 195);
+        & > p {
+          padding: 0px !important;
+          margin-top: 0px !important;
+          font-size: 15px;
+        }
+        & a {
+          text-decoration: underline;
+          color: rgb(49, 49, 188);
+        }
+      }
+      & h2 {
+        color: #0f0f0f;
+        font-size: 22px;
+        font-weight: 500;
+        text-decoration: underline;
+        width: 100%;
+        margin-bottom: 30px;
+        & i {
+          margin-left: 5px;
+        }
+      }
+      & p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #242424;
+      }
+      & span {
+        font-weight: 600;
+        color: black;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.cl-profile {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  & img {
+    width: 60%;
+  }
+  & h2.name {
+    margin-top: 10px;
+    font-size: 20px !important;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0f0f0f;
+    & span {
+      font-size: 20px;
+      color: #0f0f0f;
+      font-weight: 600;
+    }
+  }
+  & p {
+    font-size: 16px;
+    color: #242424;
+  }
+  & span {
+    margin-top: 10px;
+  }
+  & a.msg {
+    margin-top: 16px;
+    width: 70%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: rgb(38, 96, 37);
+    color: white;
+    & i {
+      margin-right: 6px;
+    }
+  }
+
+  & a.msg:hover {
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 8px 0px;
+  }
+  & h2.personal-inf-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #0f0f0f;
+    font-weight: 500;
+    width: 100%;
+    text-decoration: underline;
+    & i {
+      margin-right: 5px;
+    }
+  }
+}
+
+& p.personal-inf {
+  margin-top: 10px;
+  font-size: 15px;
+  & span {
+    font-weight: 500;
+    color: black;
+  }
+}
+
+.caregiver-profissional-info {
+  width: 45% !important;
+}
+
+div.caregiver-performance {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  & > .cg-title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #0f0f0f;
+  }
+  & div.caregiver-field{
+    display: flex;
+    width: 90%;
+    gap:5px; 
+    align-items: center;
+    margin-top: 20px;
+
+    & p{
+      font-size: 14px;
+      color:#1b1b1b !important;
+      font-weight: 500;
+    }
+    & span {
+      font-size: 13px;
+    }
+  }
+
+  & div.field-grade{
+    height: 70%;
+    
+  }
+  
 }

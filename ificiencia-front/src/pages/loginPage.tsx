@@ -1,9 +1,10 @@
+import Logo from "../assets/logo2.png"
 function LoginPage() {
   return (
     <section className="login-sec">
       <div className="login-container">
-        <h1>Logo Teste</h1>
-        <h2>(Slogan logo teste possivel lorem ipsum)</h2>
+        <img className="login-logo" src={Logo}></img>
+        <h2>Organize, acompanhe e cuide — tudo em um só lugar</h2>
 
         <form>
           <div>

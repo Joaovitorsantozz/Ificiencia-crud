@@ -1,6 +1,6 @@
 import "../style.css";
 import { useState } from "react";
-
+import Logo from "../../assets/logo.png";
 
 function SideBar(){
 const [select, setSelect] = useState<number | null>(null);
@@ -32,7 +32,7 @@ const [select, setSelect] = useState<number | null>(null);
   
       <div className="side-bar">
         <div className="sidebar-logo">
-          <h1>Logo-Teste</h1>
+          <img src={Logo}></img>
         </div>
         <div className="sidebar-content">
           <ul>

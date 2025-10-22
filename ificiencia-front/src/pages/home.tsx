@@ -28,7 +28,7 @@ function Home() {
           </div>
         </div>
 
-        <h1 className="home-container-title">Últimas Alterações</h1>
+        <h1 className="home-container-title">Últimas Alterações (pacientes)</h1>
         <ul className="home-container-list">
           <li>Tipo</li>
           <li>Nome Paciente</li>

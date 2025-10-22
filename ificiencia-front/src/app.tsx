@@ -5,6 +5,7 @@ import RegisterPacient from './pages/registerPacient'
 import LoginPage from './pages/loginPage'
 import RegisterCareGiver from './pages/registerCareGiver'
 import CaregiverHome from './pages/caregiversHome'
+import CaregiverPage from "./pages/caregiverPage"
 export default function App() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ export default function App() {
       <Route path= "/login" element={<LoginPage></LoginPage>}></Route>
       <Route path="/register-caregiver" element={<RegisterCareGiver></RegisterCareGiver>}></Route>
       <Route path="/caregiver-home" element={<CaregiverHome></CaregiverHome>}></Route>  
+      <Route path='/caregiver-page' element={<CaregiverPage></CaregiverPage>}></Route>
     </Routes>
   )
 }

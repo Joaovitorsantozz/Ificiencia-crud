@@ -35,7 +35,7 @@ function CaregiverHome() {
           </div>
           <div className="caregiver-box-links">
             <div className="details" style={{ backgroundColor: "#b63714ff" }}>
-              <a>
+              <a href="/caregiver-page">
                 <i className="fa-solid fa-eye"></i>Ver mais detalhes
               </a>
             </div>
